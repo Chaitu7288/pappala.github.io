@@ -1,3 +1,5 @@
+/* CSS file for styling the website */
+
 /* Basic Reset */
 * {
     margin: 0;
@@ -5,54 +7,53 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
-}
-
-header {
+/* Styling the Menu Bar */
+.menu-bar {
     background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    overflow: hidden;
 }
 
-nav ul {
+.menu-bar ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.menu-bar ul li {
+    flex: 1;
 }
 
-nav ul li a {
+.menu-bar ul li a {
+    display: block;
     color: white;
+    text-align: center;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+.menu-bar ul li a:hover {
+    background-color: #4CAF50;
 }
 
-main {
-    margin-top: 20px;
-}
+<style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-section {
-    margin-bottom: 20px;
-}
+    h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #666;
+    }
+  </style>
